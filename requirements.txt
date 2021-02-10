@@ -5,3 +5,4 @@ keras==2.3.1
 flask
 Werkzeug
 gunicorn
+h5py==2.10.0
