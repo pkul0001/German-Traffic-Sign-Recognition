@@ -1,6 +1,6 @@
 Pillow
 opencv-python==4.4.0.44
-tensorflow>=1.14.0
+tensorflow==1.14.0
 flask
 Werkzeug
 gunicorn
