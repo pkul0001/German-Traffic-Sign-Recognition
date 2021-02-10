@@ -1,6 +1,7 @@
 Pillow
-opencv-python
+opencv-python-headless==4.2.0.32
 tensorflow==1.14.0
 flask
 Werkzeug
 gunicorn
+PIL
