@@ -3,7 +3,7 @@ import os
 from werkzeug.utils import secure_filename
 from keras.models import load_model
 import numpy as np
-import cv2
+from PIL import Image
 
 app = Flask(__name__)
 
@@ -55,8 +55,8 @@ classes = { 0:'Speed limit (20km/h)',
 def image_processing(img):
     model = load_model('model/TSR.h5')
     data=[]
-    image = cv2.imread(img)
-    image = cv2.resize(image,(30,30))
+    image = Image.open(img)
+    image = image.resize((30,30))
     data.append(np.array(image))
     X_test=np.array(data)
     Y_pred = model.predict_classes(X_test)
