@@ -11,5 +11,4 @@ scikit-learn==0.23.1
 gunicorn==19.9.0
 Pillow
 streamlit
-keras==2.3.1
 tensorflow==1.14.0
